@@ -2,7 +2,7 @@
 """
 Created on Thu Jan  2 15:25:18 2020
 
-@author: Maxime
+@author: ZiRa_Omega
 """
 
 import spotipy
