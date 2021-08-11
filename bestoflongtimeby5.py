@@ -8,13 +8,11 @@ from tkinter import messagebox
 # from sys import exit
 
 scope = "user-top-read playlist-read-private playlist-modify-private"
-username = "Maxime Diet"
-client_id = "52a838937f0c4b36a0660567f4d2b2ec"
-client_secret = "f52a63baf5c7487b99fa0ae406f6772d"
-playlist_id_short = "1phno7FvaFAJ5sxNoPlL17"
-playlist_id_medium = "5cqFT8oPyuewlfApBXVtmK"
-playlist_id_long = "1Ga0geeZu10isWoUXJMint"
-playlist_id_long_moment = "5MQECwbZbQwuO0e4Tiu6OI"
+username = "username"
+client_id = "client_id"
+client_secret = "client_secret"
+playlist_id_long = "id_long"
+playlist_id_long_moment = " "
 redirect_uri = "http://localhost:8080"
 token = util.prompt_for_user_token(
     username,
