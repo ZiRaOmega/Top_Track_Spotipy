@@ -9,12 +9,10 @@ import spotipy
 from spotipy import util
 
 scope = "user-top-read playlist-read-private playlist-modify-private"
-web = input("Go to URL : https://developer.spotify.com , register and get client_id and client_secret then type YES")
-if web=!"YES":
-    while TRUE:
-        web = input("Go to URL : https://developer.spotify.com , register and get client_id and client_secret then type YES")
-        if web == "YES":
-            FALSE
+while 1==1:
+    web = input("Go to URL : https://developer.spotify.com , register and get client_id and client_secret then type YES ")
+    if web == "YES":
+        break
 username = input("Username :  ")
 client_id = input("Client id = ")
 client_secret = input("Client secret = ")
@@ -35,7 +33,6 @@ def create_playlist_best_of(nbr_tracks):
     for i in range(0,nbr_tracks,1):
         titre_top_track = top_track['items'][i]['id']
         titre_top_tracks.append(titre_top_track)
-        #print(titre_top_track)
     spotify.user_playlist_add_tracks(user=username, playlist_id=playlist_id_id, tracks=titre_top_tracks)
     choice()
 def replace_playlist_tracks_best_of(nbr_tracks):
@@ -43,13 +40,11 @@ def replace_playlist_tracks_best_of(nbr_tracks):
     for i in range(0,nbr_tracks,1):
         titre_top_track = top_track['items'][i]['id']
         titre_top_tracks.append(titre_top_track)
-        #print(titre_top_track)
     spotify.user_playlist_replace_tracks(user=username, playlist_id=playlist_id_id, tracks=titre_top_tracks)
     choice()
 def choice():
     end = 0
     end = input("1 : Créer ou ajouter le best of des titres\n2 : Remplacer les titres présent par votre nouveau best of\n3 : STOP\n")
-    #print(end)
     if end == "1" :
         nbr_tracks = int(input("Combien de titres : (limite = 50) "))
         create_playlist_best_of(nbr_tracks)
