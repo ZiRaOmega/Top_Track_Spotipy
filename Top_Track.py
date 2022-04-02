@@ -9,10 +9,7 @@ import spotipy
 from spotipy import util
 
 scope = "user-top-read playlist-read-private playlist-modify-private"
-while 1==1:
-    web = input("Go to URL : https://developer.spotify.com , register and get client_id and client_secret then type YES ")
-    if web == "YES":
-        break
+web = input("Go to URL : https://developer.spotify.com , register and get client_id and client_secret then type YES ")
 username = input("Username :  ")
 client_id = input("Client id = ")
 client_secret = input("Client secret = ")
